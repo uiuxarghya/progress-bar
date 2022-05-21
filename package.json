@@ -1,0 +1,76 @@
+{
+  "name": "@uiuxarghya/progress-bar",
+  "version": "0.1.0",
+  "description": "A small, easy & zero-dependency progress bar component.",
+  "repository": "https://github.com/uiuxarghya/progress-bar",
+  "author": "Arghya Ghosh <uiuxarghya@gmail.com>",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/progress-bar.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build --format cjs,esm,umd --outDir dist",
+    "lint": "tsdx lint",
+    "prepare": "yarn build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "size-limit": [
+    {
+      "path": "dist/progress-bar.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/progress-bar.esm.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/progress-bar.umd.production.min.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@size-limit/webpack": "^7.0.8",
+    "@size-limit/webpack-why": "^7.0.8",
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.4",
+    "husky": "^8.0.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.6.4"
+  },
+  "keywords": [
+    "progress",
+    "progress-bar",
+    "progress-bar-component",
+    "progress-bar-react",
+    "progress-bar-react-component",
+    "uiuxarghya"
+  ]
+}
