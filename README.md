@@ -1,9 +1,8 @@
-# progress-bar [![tests](https://github.com/uiuxarghya/progress-bar/workflows/tests/badge.svg)](https://github.com/uiuxarghya/progress-bar/actions?query=workflow%3Atests) [![npm](https://img.shields.io/npm/v/@uiuxarghya/progress-bar.svg)](https://www.npmjs.com/package/@uiuxarghya/progress-bar)
+# progress-bar [![Verified on Openbase](https://badges.openbase.com/js/verified/@uiuxarghya/progress-bar.svg?style=openbase)](https://openbase.com/js/@uiuxarghya/progress-bar?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)  [![tests](https://github.com/uiuxarghya/progress-bar/workflows/tests/badge.svg)](https://github.com/uiuxarghya/progress-bar/actions?query=workflow%3Atests) [![npm](https://img.shields.io/npm/v/@uiuxarghya/progress-bar.svg)](https://www.npmjs.com/package/@uiuxarghya/progress-bar) [![jsdeliver hits](https://data.jsdelivr.com/v1/package/npm/@uiuxarghya/progress-bar/badge?style=rounded)](https://www.jsdelivr.com/package/npm/@uiuxarghya/progress-bar) [![Featured on Openbase](https://badges.openbase.com/js/featured/@uiuxarghya/progress-bar.svg?style=openbase)](https://openbase.com/js/@uiuxarghya/progress-bar?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge)
 
 A small, easy &amp; zero-dependency progress bar component.
 
-![Progress Bar Demo](https://github.com/uiuxarghya/progress-bar/blob/main/.github/progress-bar-demo.gif)
-
+![Progress Bar Demo](https://raw.githubusercontent.com/uiuxarghya/progress-bar/main/.github/progress-bar-demo.gif)
 
 ## Features
 
