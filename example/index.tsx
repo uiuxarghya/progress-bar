@@ -16,7 +16,12 @@ const App = () => {
     progress.finish();
   }, 1000);
 
-  return <p>Progress Bar Demo</p>;
+  return (
+    <div>
+      <h2>Progress Bar Demo</h2>
+      <p> Press Ctrl+R or Command (⌘)+R to reload the page to see the progress bar.</p>
+    </div>
+  );
 };
 
 ReactDOM.render(<App />, document.getElementById('root'));
