@@ -1,6 +1,6 @@
 {
   "name": "@uiuxarghya/progress-bar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A small, easy & zero-dependency progress bar component.",
   "repository": "https://github.com/uiuxarghya/progress-bar",
   "author": "Arghya Ghosh <uiuxarghya@gmail.com>",
@@ -55,15 +55,15 @@
     "@size-limit/preset-small-lib": "^7.0.8",
     "@size-limit/webpack": "^7.0.8",
     "@size-limit/webpack-why": "^7.0.8",
-    "@types/react": "^18.0.9",
-    "@types/react-dom": "^18.0.4",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
     "husky": "^8.0.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.4.0",
-    "typescript": "^4.6.4"
+    "typescript": "^4.7.4"
   },
   "keywords": [
     "progress",
