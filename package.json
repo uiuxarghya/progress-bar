@@ -1,6 +1,6 @@
 {
   "name": "@uiuxarghya/progress-bar",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A small, easy & zero-dependency progress bar component.",
   "repository": "https://github.com/uiuxarghya/progress-bar",
   "author": "Arghya Ghosh <uiuxarghya@gmail.com>",
