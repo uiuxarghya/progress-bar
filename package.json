@@ -55,15 +55,15 @@
     "@size-limit/preset-small-lib": "^8.1.0",
     "@size-limit/webpack": "^8.1.0",
     "@size-limit/webpack-why": "^8.1.0",
-    "@types/react": "^18.0.20",
-    "@types/react-dom": "^18.0.6",
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
     "husky": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "size-limit": "^8.1.0",
     "tsdx": "^0.14.1",
-    "tslib": "^2.4.0",
-    "typescript": "^4.8.3"
+    "tslib": "^2.4.1",
+    "typescript": "^4.8.4"
   },
   "keywords": [
     "progress",
