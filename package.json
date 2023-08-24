@@ -52,18 +52,18 @@
     }
   ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^8.1.0",
-    "@size-limit/webpack": "^8.1.0",
-    "@size-limit/webpack-why": "^8.1.0",
-    "@types/react": "^18.0.24",
-    "@types/react-dom": "^18.0.8",
-    "husky": "^8.0.1",
+    "@size-limit/preset-small-lib": "^8.2.6",
+    "@size-limit/webpack": "^8.2.6",
+    "@size-limit/webpack-why": "^8.2.6",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "husky": "^8.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "size-limit": "^8.1.0",
+    "size-limit": "^8.2.6",
     "tsdx": "^0.14.1",
-    "tslib": "^2.4.1",
-    "typescript": "^4.8.4"
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
   },
   "keywords": [
     "progress",
