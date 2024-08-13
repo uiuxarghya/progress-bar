@@ -12,12 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
+      - uses: oven-sh/setup-bun@v2
         with:
-          node-version: '16'
-          cache: yarn
+          node-version: "20"
+          cache: bun
           registry-url: https://registry.npmjs.org/
-      - run: yarn install
-      - run: yarn lint
+      - run: bun install
+      - run: bun run lint
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
