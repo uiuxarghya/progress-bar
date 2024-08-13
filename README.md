@@ -13,12 +13,9 @@ A small, easy &amp; zero-dependency progress bar component.
 ## Installation
 
 ```sh
-$ npm i @uiuxarghya/progress-bar
-
-# OR
-
-$ yarn add @uiuxarghya/progress-bar
-
+bun i @uiuxarghya/progress-bar 
+# npm i @uiuxarghya/progress-bar
+# yarn add @uiuxarghya/progress-bar
 ```
 
 ## Usage
