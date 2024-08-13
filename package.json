@@ -2,75 +2,44 @@
   "name": "@uiuxarghya/progress-bar",
   "version": "0.1.4",
   "description": "A small, easy & zero-dependency progress bar component.",
-  "repository": "https://github.com/uiuxarghya/progress-bar",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uiuxarghya/progress-bar.git"
+  },
   "author": "Arghya Ghosh <uiuxarghya@gmail.com>",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/progress-bar.esm.js",
-  "typings": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "engines": {
-    "node": ">=16"
-  },
+  "main": "dist/progress-bar.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "start": "tsdx watch",
-    "build": "tsdx build --format cjs,esm,umd --outDir dist",
-    "lint": "tsdx lint",
-    "prepare": "yarn build",
+    "dev": "tsc && bun build ./src/index.ts --outdir ./dist --entry-naming progress-bar.js --format esm --minify --sourcemap=linked --watch",
+    "build": "tsc && bun build ./src/index.ts --outdir ./dist --entry-naming progress-bar.js --format esm --minify --sourcemap=linked",
+    "lint": "tsc",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "prepublishOnly": "bun run build"
   },
-  "peerDependencies": {
-    "react": ">=18"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
+  "files": [
+    "dist"
+  ],
   "size-limit": [
     {
-      "path": "dist/progress-bar.cjs.production.min.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/progress-bar.esm.js",
-      "limit": "10 KB"
-    },
-    {
-      "path": "dist/progress-bar.umd.production.min.js",
-      "limit": "10 KB"
+      "path": "dist/progress-bar.js",
+      "limit": "500 B"
     }
   ],
   "devDependencies": {
-    "@size-limit/preset-small-lib": "^8.2.6",
-    "@size-limit/webpack": "^8.2.6",
-    "@size-limit/webpack-why": "^8.2.6",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "husky": "^8.0.3",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "size-limit": "^8.2.6",
-    "tsdx": "^0.14.1",
-    "tslib": "^2.6.2",
-    "typescript": "^5.2.2"
+    "@size-limit/preset-small-lib": "^11.1.4",
+    "@size-limit/time": "^11.1.4",
+    "size-limit": "^11.1.4",
+    "typescript": "^5.5.4"
   },
   "keywords": [
     "progress",
+    "progressbar",
     "progress-bar",
     "progress-bar-component",
     "progress-bar-react",
     "progress-bar-react-component",
-    "uiuxarghya"
+    "uiuxarghya",
+    "typescript"
   ]
 }
