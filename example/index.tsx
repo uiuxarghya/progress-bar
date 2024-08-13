@@ -1,13 +1,13 @@
-import 'react-app-polyfill/ie11';
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import ProgressBar from '../src';
+import * as React from "react";
+import "react-app-polyfill/ie11";
+import * as ReactDOM from "react-dom";
+import ProgressBar from "../src";
 
 const progress = new ProgressBar({
   size: 4,
-  color: '#3B82F6',
-  className: 'progress-bar',
-  delay: 100,
+  color: "#3B82F6",
+  className: "progress-bar",
+  delay: 100
 });
 
 const App = () => {
@@ -19,9 +19,12 @@ const App = () => {
   return (
     <div>
       <h2>Progress Bar Demo</h2>
-      <p> Press Ctrl+R or Command (⌘)+R to reload the page to see the progress bar.</p>
+      <p>
+        Press Ctrl+R or Command (⌘)+R to reload the page to see the progress
+        bar.
+      </p>
     </div>
   );
 };
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
