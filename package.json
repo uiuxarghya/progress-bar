@@ -2,10 +2,7 @@
   "name": "@uiuxarghya/progress-bar",
   "version": "0.1.4",
   "description": "A small, easy & zero-dependency progress bar component.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/uiuxarghya/progress-bar.git"
-  },
+  "repository": "https://github.com/uiuxarghya/progress-bar",
   "author": "Arghya Ghosh <uiuxarghya@gmail.com>",
   "license": "MIT",
   "main": "dist/progress-bar.js",
