@@ -1,5 +1,4 @@
 name: publish
-
 on:
   release:
     types: [created]
@@ -11,20 +10,25 @@ jobs:
       packages: write
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v2
-      - uses: oven-sh/setup-bun@v2
+      - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "20.x"
           registry-url: https://registry.npmjs.org/
+
+      - uses: oven-sh/setup-bun@v2
       - run: bun install
       - run: bun run lint
-      - run: bun run build
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-      - uses: actions/setup-node@v2
+
+      - uses: actions/setup-node@v4
         with:
           registry-url: https://npm.pkg.github.com/
+
+      - uses: oven-sh/setup-bun@v2
+      - run: bun install
+      - run: bun run lint
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
